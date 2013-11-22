@@ -1,0 +1,41 @@
+{
+  "name": "generator-simple",
+  "version": "0.0.0",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/robdodson/generator-simple",
+  "bugs": "https://github.com/robdodson/generator-simple/issues",
+  "author": {
+    "name": "Rob Dodson",
+    "email": "lets.email.rob@gmail.com",
+    "url": "https://github.com/robdodson"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robdodson/generator-simple.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.13.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
