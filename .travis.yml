@@ -5,4 +5,5 @@ node_js:
 before_install:
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-simple' ]; then cd .. && eval "mv $currentfolder generator-simple" && cd generator-simple; fi
+  - npm install -g bower
 
