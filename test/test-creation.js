@@ -22,14 +22,17 @@ describe('simple generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
+      'scripts/main.js',
+      'styles/main.css',
+      '.editorconfig',
+      '.gitattributes',
+      '.gitignore',
       '.jshintrc',
-      '.editorconfig'
+      'bower.json',
+      'index.html',
+      'package.json'
     ];
 
-    helpers.mockPrompt(this.app, {
-      'someOption': true
-    });
-    this.app.options['skip-install'] = true;
     this.app.run({}, function () {
       helpers.assertFiles(expected);
       done();
