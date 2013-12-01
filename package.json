@@ -1,7 +1,7 @@
 {
   "name": "generator-simple",
-  "version": "0.0.0",
-  "description": "A generator for Yeoman",
+  "version": "0.1.0",
+  "description": "A tiny Yeoman generator for quickly sketching ideas",
   "keywords": [
     "yeoman-generator"
   ],

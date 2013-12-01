@@ -16,30 +16,11 @@ var SimpleGenerator = module.exports = function SimpleGenerator(args, options, c
 
 util.inherits(SimpleGenerator, yeoman.generators.Base);
 
-// SimpleGenerator.prototype.askFor = function askFor() {
-//   var cb = this.async();
-
-//   // have Yeoman greet the user.
-//   console.log(this.yeoman);
-
-//   var prompts = [{
-//     type: 'confirm',
-//     name: 'someOption',
-//     message: 'Would you like to enable this option?',
-//     default: true
-//   }];
-
-//   this.prompt(prompts, function (props) {
-//     this.someOption = props.someOption;
-
-//     cb();
-//   }.bind(this));
-// };
-
 SimpleGenerator.prototype.app = function app() {
-  this.template('_package.json', 'package.json');
   this.template('_bower.json', 'bower.json');
+  this.template('_Gruntfile.js', 'Gruntfile.js');
   this.template('_index.html', 'index.html');
+  this.template('_package.json', 'package.json');
   this.copy('main.css', 'styles/main.css');
   this.copy('main.js', 'scripts/main.js');
 };

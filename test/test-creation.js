@@ -30,6 +30,7 @@ describe('simple generator', function () {
       '.jshintrc',
       'bower.json',
       'index.html',
+      'Gruntfile.js',
       'package.json'
     ];
 
