@@ -16,11 +16,17 @@ module.exports = function (grunt) {
         options: {
           hostname: 'localhost',
           port: 9000,
-          livereload: true
+          livereload: true,
+           open: true
         }
       }
     },
+    jshint: {
+      myFiles: ['scripts/**/*.js', 'scripts/**/*.js']
+    },
     watch: {
+      files: '<%= jshint.myFiles %>',
+      tasks: ['jshint'],
       options: {
         livereload: true
       },
@@ -30,6 +36,8 @@ module.exports = function (grunt) {
     }
   });
 
+  //load jshint
+   grunt.loadNpmTasks('grunt-contrib-jshint');
   // Default task.
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['jshint', 'connect', 'watch']);
 };
