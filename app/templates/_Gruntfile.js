@@ -36,6 +36,8 @@ module.exports = function (grunt) {
     }
   });
 
+  //load jshint
+   grunt.loadNpmTasks('grunt-contrib-jshint');
   // Default task.
   grunt.registerTask('default', ['jshint', 'connect', 'watch']);
 };
